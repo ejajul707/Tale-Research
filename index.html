@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Brain Research</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shafat Hussain">
+    <!-- CSS Files ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" id="bootstrap-grid" />
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" id="bootstrap-reboot" />
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/color.css" rel="stylesheet" type="text/css">
+
+    <!-- custom background -->
+    <link rel="stylesheet" href="css/bg.css" type="text/css">
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="css/colors/blue.css" type="text/css" id="colors">
+
+    <!-- revolution slider -->
+    <link rel="stylesheet" href="rs-plugin/css/settings.css" type="text/css">
+    <link rel="stylesheet" href="css/rev-settings.css" type="text/css">
+
+    <!-- custom font -->
+    <link rel="stylesheet" href="css/font-style-2.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<style>
+    
+.flip-container-web {
+  perspective: 1000px;
+}
+
+.flip-box-web {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-container-web:hover .flip-box-web {
+  transform: rotateX(180deg);
+}
+.flip-front-web h3{
+    color: white;
+}
+.flip-front-web,
+.flip-back-web {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flip-front-web {
+  background-image: url('./my/sample11.jpg'); 
+}
+
+.flip-back-web {
+  background-image: url('./my/sample22.jpg');
+  transform: rotateX(180deg);
+}
+
+</style>
+
+<body id="homepage" class="de_light">
+
+    <div id="wrapper">
+
+        <!-- header begin -->
+        <header class="transparent scroll-light">
+            <div class="info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <!-- social icons -->
+                            <div class="column social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-rss"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                            </div>
+                            <!-- social icons close -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="#">
+                                <!-- <img class="logo" id="brain" src="./images/logo/brain.png" alt=""> -->
+                                <p class="tale-logo">Tale <span style="color: #43a2dc;">Research</span></p>
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"></span>
+                        <!-- small button close -->
+
+                        <!-- mainmenu begin -->
+                        <nav class="md-flex">
+                            <ul id="mainmenu">
+                                <li><a href="#">Home<span></span></a>
+
+                                </li>
+                                <li><a href="#">Research and solutions</a>
+                                    <ul>
+                                        <li> <a href="">Neural Models</a> </li>
+                                        <li> <a href="">BCI Research</a> </li>
+                                        <li> <a href="">Cognitive Computing</a> </li>
+                                        <li> <a href="">Neuromorphic Eng.</a> </li>
+                                        <li> <a href="">Data Analysis</a> </li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="services.html">Services</a>
+                                    <ul>
+                                        <li><a href="">Custom Models</a></li>
+                                        <li><a href="">Data Analysis</a></li>
+                                        <li><a href="">Collaboration</a></li>
+                                        <li><a href="">Consulting</a></li>
+                                        <li><a href="">Training</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog.html">Resources</a>
+                                    <ul>
+                                        <li><a href="">Documentation</a></li>
+                                        <li><a href="">Papers</a></li>
+                                        <li><a href="">Tutorial</a></li>
+                                        <li><a href="">Code</a></li>
+                                        <li><a href="">Case Studies</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="shop.html">About Us</a>
+                                    <ul>
+                                        <li><a href="">Mission</a></li>
+                                        <li><a href="">Team</a></li>
+                                        <li><a href="">Careers</a></li>
+                                        <li><a href="">Partners</a></li>
+                                        <li><a href="">Contact</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a>
+                                    <ul>
+                                        <li><a href="">General Inquiries</a></li>
+                                        <li><a href="">Research Collaboration requests</a></li>
+                                        <li><a href="">Career Applications</a></li>
+                                        <li><a href="">Media Relations</a></li>
+                                        <li><a href="">Technical Support</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">News and events</a>
+                                    <ul>
+                                        <li><a href="">Latest Research findings</a></li>
+                                        <li><a href="">Conference Presentations</a></li>
+                                        <li><a href="">Company News</a></li>
+                                        <li><a href="">Upcoming Events</a></li>
+                                        <li><a target="_blank" href="https://programminginneuroscience.com/">Blog posts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- mainmenu close -->
+
+                    </div>
+
+
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+
+        <!-- content begin -->
+        <div id="content" class="no-bottom no-top">
+
+            <!-- revolution slider begin -->
+            <section id="section-slider" class="fullwidthbanner-container" aria-label="section-slider">
+                <div id="revolution-slider">
+                    <ul>
+
+                        <img src="images-webstudio/slider/wide1.jpg" alt="" />
+                        <div class="tp-caption big-white sft" data-x="0" data-y="150" data-speed="800" data-start="400"
+                            data-easing="easeInOutExpo" data-endspeed="450">
+                            Make It Simple
+                        </div>
+                        <!-- <div class="tp-caption ultra-big-white customin customout start" data-x="0" data-y="center"
+                                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:2;scaleY:2;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.85;scaleY:0.85;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="800" data-start="400" data-easing="easeInOutExpo" data-endspeed="400">
+                                But <span class="id-color">Siginficant</span>
+                            </div>
+                            <div class="tp-caption sfb" data-x="0" data-y="335" data-speed="400" data-start="800"
+                                data-easing="easeInOutExpo">
+                                <a href="#" class="btn-slider">Our 
+                                </a>
+                            </div> -->
+
+                        <li data-transition="fade" data-slotamount="10" data-masterspeed="200" data-thumb="">
+                            <!-- <video src="./video/Brain.webm" autoplay muted loop></video> -->
+                             <img src="./my/heroImage.jpg" alt="">
+                            <!-- <div class="tp-caption big-white sft" data-x="center" data-y="160" data-speed="800"
+                                data-start="400" data-easing="easeInOutExpo" data-endspeed="450">
+                                Our Creative Process
+                            </div> -->
+
+                            <div class="tp-caption ultra-big-white customin customout start" data-x="center"
+                                data-y="center"
+                                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:2;scaleY:2;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.85;scaleY:0.85;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                                data-speed="800" data-start="400" data-easing="easeInOutExpo" data-endspeed="400">
+                                <span style="background: #1c2740d6;
+                                border-radius: 11px;
+                                padding: 0px 4px;"> Tale <span class="id-color">Research</span></span>
+                            </div>
+                            <!-- <div class="tp-caption sfb" data-x="center" data-y="335" data-speed="400" data-start="800"
+                                data-easing="easeInOutExpo">
+                                <a href="#" class="btn-slider">Our Research
+                                </a>
+                            </div> -->
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <!-- revolution slider close -->
+
+            <!-- section begin -->
+            <section id="section-about">
+                <div class="wm wow fadeIn">01</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                            <h5 class="s2 id-color">We Love</h5>
+                            <h1>Our Publication</h1>
+                            <div class="separator"><span><i class="fa fa-circle"></i></span></div>
+                            <div class="spacer-single"></div>
+                        </div>
+
+                        <div class="col-md-4 wow fadeInRight">
+                            <a class="image-popup-no-margins" href="images-webstudio/services/1.jpg">
+                                <img src="images-webstudio/services/1.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="spacer20"></div>
+                            <h3><span class="id-color">Seizure </span> Detection</h3>
+                            Our pioneering seizure detection algorithm combines multi-modal EEG signal processing with machine learning to predict seizure onset up to 15 minutes before clinical manifestation. This early warning system allows patients and caregivers crucial preparation time, reducing injury risk and improving quality of life for epilepsy patients.
+                            <br>
+                            <button type="button" class="btn btn-primary rounded mt-2 text-light">Download</button>
+                        </div>
+
+                        <div class="col-md-4 wow fadeInRight" data-wow-delay=".2s">
+                            <a class="image-popup-no-margins" href="images-webstudio/services/2.jpg">
+                                <img src="images-webstudio/services/2.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="spacer20"></div>
+                            <h3><span class="id-color">VR + EEG Integration </span> for Stroop Test</h3>
+                            We've revolutionized cognitive assessment by integrating virtual reality with real-time EEG monitoring during modified Stroop tests. This immersive environment provides more ecologically valid testing conditions while capturing neural responses with millisecond precision, offering deeper insights into executive function, attention allocation, and cognitive interference.
+                            <br>
+                            <button type="button" class="btn btn-primary rounded mt-2 text-light">Download</button>
+                        </div>
+
+                        <div class="col-md-4 wow fadeInRight" data-wow-delay=".4s">
+                            <a class="image-popup-no-margins" href="images-webstudio/services/3.jpg">
+                                <img src="images-webstudio/services/3.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="spacer20"></div>
+                            <h3><span class="id-color">Neuro </span> Finance</h3>
+                            Our Neuro Finance research bridges neuroscience and behavioral economics to decode the neural mechanisms underlying financial decision-making. By monitoring brain activity during simulated trading scenarios, we've identified neural markers that predict risk assessment, loss aversion, and decision confidence with remarkable accuracy.
+                            <br>
+                            <button type="button" class="btn btn-primary rounded mt-2 text-light">Download</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+
+            <!-- section begin -->
+            <section id="section-testimonial-coworking"
+                data-bgimage="url(./my/heroImage.jpg)"
+                class="text-light" data-stellar-background-ratio=".1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-8 offset-md-2">
+
+                            <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp">
+                                <!-- <blockquote class="testimonial-big s2 text-dark">
+                                    <span class="title">Excellent services!</span>
+                                    I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+                                    <span class="name">John, Customer</span>
+                                </blockquote> -->
+
+                                <blockquote class="testimonial-big s2 text-warning">
+                                    <span class="title">Research Quote</span>
+                                    The integration of spectral analysis and non-linear dynamics has allowed us to identify pre-ictal biomarkers with unprecedented sensitivity, achieving 94% prediction accuracy in our clinical trials.
+                                    <span class="name">Dr. Eleanor Mendez, Lead Researcher</span>
+                                </blockquote>
+
+                                <!-- <blockquote class="testimonial-big s2 text-dark">
+                                    <span class="title">Superb teamwork!</span>
+                                    I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+
+                                    <span class="name">Michael, Customer</span>
+                                </blockquote> -->
+                            </div>
+
+                        </div>
+
+                        <div class="spacer-double"></div>
+
+                        <!-- <div class="col-md-12 wow fadeInUp" data-wow-delay="0s">
+                            <div id="logo-carousel" class="owl-carousel owl-theme">
+                                <img src="images-webstudio/logo/1.png" class="img-responsive" alt="">
+                                <img src="images-webstudio/logo/2.png" class="img-responsive" alt="">
+                                <img src="images-webstudio/logo/3.png" class="img-responsive" alt="">
+                                <img src="images-webstudio/logo/4.png" class="img-responsive" alt="">
+                                <img src="images-webstudio/logo/5.png" class="img-responsive" alt="">
+                                <img src="images-webstudio/logo/6.png" class="img-responsive" alt="">
+                                <img src="images-webstudio/logo/7.png" class="img-responsive" alt="">
+                                <img src="images-webstudio/logo/8.png" class="img-responsive" alt="">
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+
+            <!-- section begin -->
+            <section data-bgcolor="#f8f8f8">
+                <div class="wm wow fadeIn">02</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                            <h5 class="s2 id-color">Discover</h5>
+                            <h1>Our Features</h1>
+                            <div class="separator"><span><i class="fa fa-square"></i></span></div>
+                            <div class="spacer-single"></div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <!-- <div class="col-md-3">
+                            <div class="box-icon top">
+                                <span class="icon wow bounceIn" data-wow-delay="0s"><i
+                                        class="icon-paintbrush id-color"></i></span>
+                                <div class="text wow fadeIn" data-wow-delay=".15s">
+                                    <h3>Website Expertise</h3>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque
+                                        laudantium, totam rem aperiam, eaque ipsa.</p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- =========Apna==================== -->
+                        <div class="col-md-3">
+                            <div class="flip-container-web">
+                                <div class="flip-box-web">
+                                    <div class="flip-front-web">
+                                        <h3>Website Expertise</h3>
+                                    </div>
+                                    <div class="flip-back-web">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                            doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="flip-container-web">
+                                <div class="flip-box-web">
+                                    <div class="flip-front-web">
+                                        <h3>Lorem, ipsum.</h3>
+                                    </div>
+                                    <div class="flip-back-web">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="flip-container-web">
+                                <div class="flip-box-web">
+                                    <div class="flip-front-web">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                    </div>
+                                    <div class="flip-back-web">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi dolore, ex
+                                            laborum iure labore eius.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="flip-container-web">
+                              <div class="flip-box-web">
+                                <div class="flip-front-web">
+                                  <h3>Website Expertise</h3>
+                                </div>
+                                <div class="flip-back-web">
+                                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                          
+                        <!-- =========/Apna -->
+
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+
+            <section data-bgimage=""
+                class="text-light" data-stellar-background-ratio=".1">
+                <div class="wm wow fadeIn">03</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center wow fadeInUp">
+                            <h5 class="s2 id-color">Sample</h5>
+                            <h1 style="color: black !important;">Study Case</h1>
+                            <div class="separator"><span><i class="fa fa-square"></i></span></div>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+
+                    <div class="row g-0 align-items-center wow fadeInUp" data-bgcolor="rgba(20,20,20,.8)">
+                        <div class="col-md-6 text-middle">
+                            <div class="padding50">
+                                <h3><span class="id-color">Website Before / After</span></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                <div class="spacer10"></div>
+                                <a href="#" class="btn-line-white">View Details</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 text-middle">
+                            <div class="twentytwenty-container">
+                                <img src="./my/image.png" alt="" class="img-responsive" />
+                                <img src="./my/image2.jpg" alt="" class="img-responsive" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer begin -->
+            <footer class="style-2">
+                <div class="container">
+                    <div class="row align-items-middle">
+                        <div class="col-md-3">
+                            <!-- <img src="./images/logo/brain.png" id="brain" class="logo-small" alt=""> -->
+                            <p class="tale-logo-footer">Tale <span style="color: #43a2dc;">Research</span></p>
+                            <br>
+                        </div>
+
+                        <div class="col-md-6">
+                            <!-- &copy; Copyright 2025 - Design By - <span class="id-color"> Shafat Hussain</span> -->
+                        </div>
+
+                        <div class="col-md-3 text-right">
+                            <!-- <div class="social-icons">
+                                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
+                                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div> -->
+
+                            <p>Tale Research LLC 
+                                <br> <span style="color: #43a2dc;"> Virginia, United States</span> </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <a href="#" id="back-to-top"></a>
+            </footer>
+            <!-- footer close -->
+        </div>
+    </div>
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({ default_offset_pct: 0.5 });
+            $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({ default_offset_pct: 0.5, orientation: 'vertical' });
+        });
+    </script>
+
+
+</body>
+
+</html>
