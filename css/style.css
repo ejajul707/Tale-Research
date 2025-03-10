@@ -114,6 +114,13 @@ body.no-scroll::-webkit-scrollbar {
 	text-align: justify;
 }
 
+.ctm-btn{
+	background-color: #4C3BCF !important;
+}
+
+.ctm-btn:hover{
+	background-color: #342d68 !important;
+}
 
 
 .noselect {
